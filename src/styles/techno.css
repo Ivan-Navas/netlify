@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.mainTContainer{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  transition: 3s;
+  position: relative;
+}
+.imageContainer{
+  width: 200px;
+  height: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.childContainer {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 100px;
+  height: 100px;
+}
+.title {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.comingSoon{
+  border: 3px solid #fff;
+  border-radius: 16px 0 16px 0;
+  color: #f1f1f1;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, .1);
+  animation: bordes 2s linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  cursor: pointer;
+}
+.proximo{
+  position: absolute;
+  bottom: 10px;
+  left: 120px;
+}
+@media (max-width: 707px){
+  .mainTContainer{
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+}
+@media (max-width: 390px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+}
+
+.animacion{
+  animation-name: techno;
+  animation-duration: 2s;
+}
+@keyframes techno{
+  0%{
+    transform: translatex(-100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bordes{
+  0%{
+    border-color: #e3173c;
+  }
+  50%{
+    border-color: #bade00;
+  }
+  100%{
+    border-color: #00f7ff;
+  }
+}
