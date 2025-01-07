@@ -45,7 +45,7 @@ export const works = [
 
   {
     name: "Consumo de The Rink&Morty Api",
-    id: 2,
+    id: 3,
     description:
       "Pagina wen en la que se consume una api(The rick and morty api), como muetra de conosimientos en consumo de apis",
     gif: rickVideo,
